@@ -36,3 +36,32 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## NEXT.JS TEMPLATE ##
+
+- Components:
+
+import React, { FunctionComponent, ReactNode } from 'react';
+
+import * as S from './Layout.styles';
+
+export interface LayoutProps {
+  prop1: string;
+}
+
+const defaultProps: Partial<LayoutProps> = {};
+
+const Layout: FunctionComponent<LayoutProps> = ({ prop1 }) => {
+  return (
+    <S.Wrapper>
+      <S.Main>
+        {children}
+      </S.Main>
+    </S.Wrapper>
+  );
+};
+
+Layout.defaultProps = defaultProps;
+
+export default Layout;
+

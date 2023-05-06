@@ -1,0 +1,10 @@
+{
+  "name": "NextJS Template - AA",
+  "short_name": "AA-Template",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#000000",
+  "scope": "/",
+  "start_url": "/",
+  "icons": []
+}
