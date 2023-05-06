@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { compiler } from 'markdown-to-jsx';
 
 import * as S from './RichText.styles';
@@ -13,7 +13,7 @@ const defaultProps: Partial<RichTextProps> = {
   defaultSpacing: false,
 };
 
-const RichText: React.FunctionComponent<RichTextProps> = ({
+const RichText: FunctionComponent<RichTextProps> = ({
   defaultSpacing,
   richText,
   ...rest

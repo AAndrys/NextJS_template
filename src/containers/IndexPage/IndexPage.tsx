@@ -1,3 +1,4 @@
+import { FunctionComponent } from 'react';
 import { GetStaticProps } from 'next';
 import Image from 'next/image';
 import { ISR_TIMEOUT } from 'utils/config';
@@ -13,7 +14,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
 interface IndexPageProps {}
 
-const IndexPage: React.FunctionComponent<IndexPageProps> = () => {
+const IndexPage: FunctionComponent<IndexPageProps> = () => {
   return (
     <main className={styles.main}>
       <div className={styles.description}>

@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { FunctionComponent, useMemo, useState } from 'react';
 import NextHead from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffectOnce } from 'usehooks-ts';
@@ -15,7 +15,7 @@ export interface HeadProps {
   };
 }
 
-const Head: React.FunctionComponent<HeadProps> = ({
+const Head: FunctionComponent<HeadProps> = ({
   title,
   description,
   ogTitle,

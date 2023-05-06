@@ -9,8 +9,12 @@
     "lint": "next lint",
     "check": "gts check",
     "clean": "gts clean",
-    "fix": "gts fix"
+    "fix": "gts fix",
+    "compile": "npm run fix && tsc -p ."
   },
+  "pre-commit": [
+    "compile"
+  ],
   "dependencies": {
     "@apollo/client": "^3.7.14",
     "@types/node": "18.16.3",
@@ -38,6 +42,7 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.26",
-    "eslint-plugin-simple-import-sort": "^10.0.0"
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "pre-commit": "^1.2.2"
   }
 }

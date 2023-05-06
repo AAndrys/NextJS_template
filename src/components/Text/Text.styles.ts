@@ -1,29 +1,26 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-import { setTypography } from 'utils/styles/mixins';
 import {
   ColorNames,
   colors,
-  FontNames,
-  fonts,
-  validFontCategories,
+  // FontNames,
+  // fonts,
+  // validFontCategories,
 } from 'utils/styles/theme';
 
 import { TextProps } from './Text';
 
 interface ElementProps {
   color: ColorNames;
-  size: (typeof validFontCategories)[number];
+  size: any;
   withUnderline?: boolean;
   transform?: TextProps['transform'];
-  fontFamily?: FontNames;
+  // fontFamily?: FontNames;
 }
 
 export const Element = styled(motion.p)<ElementProps>`
-  ${({ size }) => setTypography(size)};
   ${({ transform }) => transform && `text-transform: ${transform}`};
   color: ${({ color }) => colors[color]};
-  ${({ fontFamily }) => fontFamily && `font-family: ${fonts.face[fontFamily]}`};
   user-select: none;
   text-decoration: none;
   position: relative;

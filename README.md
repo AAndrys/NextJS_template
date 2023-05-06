@@ -37,32 +37,32 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## NEXT.JS TEMPLATE ##
+#### NEXT.JS TEMPLATE ####
 
-- Components:
+- Component structure:
 
 ```bash
-import React, { FunctionComponent, ReactNode } from 'react';
+import React, { FunctionComponent } from 'react';
 
-import * as S from './Layout.styles';
+import * as S from './Example.styles';
 
-export interface LayoutProps {
+export interface ExampleProps {
   prop1: string;
 }
 
-const defaultProps: Partial<LayoutProps> = {};
+const defaultProps: Partial<ExampleProps> = {
+  prop1: 'Test'
+};
 
-const Layout: FunctionComponent<LayoutProps> = ({ prop1 }) => {
+const Example: FunctionComponent<ExampleProps> = ({ prop1 }) => {
   return (
     <S.Wrapper>
-      <S.Main>
-        {children}
-      </S.Main>
+      {content}
     </S.Wrapper>
   );
 };
 
-Layout.defaultProps = defaultProps;
+Example.defaultProps = defaultProps;
 
-export default Layout;
+export default Example;
 ```

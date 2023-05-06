@@ -1,15 +1,15 @@
 import React, { FunctionComponent } from 'react';
-import { ColorNames, FontNames, validFontCategories } from 'utils/styles/theme';
+import { ColorNames } from 'utils/styles/theme';
 
 import * as S from './Text.styles';
 
 export interface TextProps {
   text: string;
-  size: (typeof validFontCategories)[number];
+  size: any;
   color?: ColorNames;
   as?: any;
   transform?: 'uppercase' | 'capitalize' | 'lowercase';
-  fontFamily?: FontNames;
+  fontFamily?: any;
   [x: string]: any;
 }
 
