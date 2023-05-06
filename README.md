@@ -41,6 +41,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - Components:
 
+```bash
 import React, { FunctionComponent, ReactNode } from 'react';
 
 import * as S from './Layout.styles';
@@ -64,4 +65,4 @@ const Layout: FunctionComponent<LayoutProps> = ({ prop1 }) => {
 Layout.defaultProps = defaultProps;
 
 export default Layout;
-
+```
