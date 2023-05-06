@@ -1,9 +1,13 @@
 import { createGlobalStyle, css } from 'styled-components';
 import reset from 'styled-reset';
 
+import fontFace from './fontFace';
+import { fonts } from './fonts';
 import { colors } from './theme';
 
 const styles = css`
+  ${fontFace}
+
   * {
     box-sizing: border-box;
     margin: 0;
@@ -32,6 +36,8 @@ const styles = css`
   }
 
   html {
+    font-size: calc(16px + 1vw);
+    line-height: calc(22px + 1vw);
     overflow-x: hidden;
     scrollbar-width: none;
     -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -90,6 +96,53 @@ const styles = css`
   .accessibility-focus button:focus {
     outline: auto 5px Highlight; /* for non-webkit browsers */
     outline: auto 5px -webkit-focus-ring-color; /* for webkit browsers */
+  }
+
+  h1 {
+    ${fonts.h1}
+  }
+
+  h2 {
+    ${fonts.h2}
+  }
+
+  h3 {
+    ${fonts.h3}
+  }
+
+  h4 {
+    ${fonts.h4}
+  }
+
+  h5 {
+    ${fonts.h5}
+  }
+
+  h6 {
+    ${fonts.h6}
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  small {
+    ${fonts.smallLight}
+  }
+
+  label {
+    ${fonts.label}
+  }
+
+  body,
+  p,
+  li,
+  em {
+    ${fonts.bodyLight}
+  }
+
+  em {
+    font-style: italic;
   }
 
   @media (prefers-color-scheme: dark) {

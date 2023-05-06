@@ -4,6 +4,7 @@ import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
 import { useEffectOnce } from 'usehooks-ts';
 import { onResize } from 'utils';
+import { HEAD_TEMP_DATA } from 'utils/data';
 import GlobalStyles from 'utils/styles/globalStyles';
 import theme from 'utils/styles/theme';
 
@@ -23,16 +24,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
       <ThemeProvider theme={{ ...theme, locale: router.locale }}>
         <MotionConfig>
           <GlobalStyles />
-          <Head
-            title={''}
-            description={''}
-            ogTitle={''}
-            ogDescription={''}
-            ogType={''}
-            ogImage={{
-              url: '',
-            }}
-          />
+          <Head {...HEAD_TEMP_DATA} />
           <Layout>
             <AnimatePresence
               mode="wait"

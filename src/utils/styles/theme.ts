@@ -13,7 +13,7 @@ export const colors: Theme['colors'] = {
   [ColorNames.black]: '#000000',
 } as const;
 
-const layout = {
+export const layout = {
   zIndex: {
     overContent: 1,
     filter: 10,
