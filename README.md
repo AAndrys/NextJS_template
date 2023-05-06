@@ -47,17 +47,17 @@ import React, { FunctionComponent } from 'react';
 import * as S from './Example.styles';
 
 export interface ExampleProps {
-  prop1: string;
+  text: string;
 }
 
 const defaultProps: Partial<ExampleProps> = {
-  prop1: 'Test'
+  text: 'Test'
 };
 
-const Example: FunctionComponent<ExampleProps> = ({ prop1 }) => {
+const Example: FunctionComponent<ExampleProps> = ({ text }) => {
   return (
     <S.Wrapper>
-      {content}
+      <p>{text}</p>
     </S.Wrapper>
   );
 };
