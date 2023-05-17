@@ -34,13 +34,20 @@ const IndexPage: FunctionComponent<IndexPageProps> = () => {
               alt="Vercel Logo"
               width={100}
               height={24}
+              priority
             />
           </a>
         </div>
       </S.Description>
 
       <S.Center>
-        <S.Logo src="/next.svg" alt="Next.js Logo" width={180} height={37} />
+        <S.Logo
+          src="/next.svg"
+          alt="Next.js Logo"
+          width={180}
+          height={37}
+          priority
+        />
       </S.Center>
 
       <S.Grid>

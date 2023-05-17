@@ -10,7 +10,7 @@
     "check": "gts check",
     "clean": "gts clean",
     "fix": "gts fix",
-    "compile": "npm run fix && tsc -p ."
+    "compile": "npm run check && tsc -p ."
   },
   "pre-commit": [
     "compile"

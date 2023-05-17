@@ -1,6 +1,6 @@
 import React, { FunctionComponent, ReactNode } from 'react';
+import { pageMotionProps } from 'utils/styles/animations';
 
-// import { pageMotionProps } from 'utils/styles/animations';
 import * as S from './Layout.styles';
 
 export interface LayoutProps {
@@ -11,7 +11,7 @@ const defaultProps: Partial<LayoutProps> = {};
 
 const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
   return (
-    <>
+    <S.Wrapper {...pageMotionProps}>
       {/* <CookieBar /> */}
       {/* <Header /> */}
       {/* <Menu /> */}
@@ -19,7 +19,7 @@ const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
       <S.Main id="layout">{children}</S.Main>
 
       {/* <Footer  /> */}
-    </>
+    </S.Wrapper>
   );
 };
 

@@ -28,7 +28,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
                 typeof window !== 'undefined' && window.scrollTo({ top: 0 })
               }
             >
-              <Component {...pageProps} />
+              <Component router={router} {...pageProps} />
             </AnimatePresence>
           </Layout>
         </MotionConfig>
