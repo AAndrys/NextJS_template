@@ -65,7 +65,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = () => {
           </S.Card>
         ))}
       </S.Grid>
-      <small>Powered and modified by AA &copy;</small>
+      <small>Modified by AA &copy;</small>
     </S.Main>
   );
 };
