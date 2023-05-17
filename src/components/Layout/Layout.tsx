@@ -1,6 +1,6 @@
 import React, { FunctionComponent, ReactNode } from 'react';
-// import { pageMotionProps } from 'utils/styles/animations';
 
+// import { pageMotionProps } from 'utils/styles/animations';
 import * as S from './Layout.styles';
 
 export interface LayoutProps {
