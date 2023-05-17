@@ -12,4 +12,6 @@ export const Wrapper = styled.div<WrapperProps>`
   position: relative;
 `;
 
-export const Main = styled(motion.main)``;
+export const Main = styled(motion.main)`
+  opacity: 1;
+`;
