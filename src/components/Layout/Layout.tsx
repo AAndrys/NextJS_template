@@ -11,12 +11,14 @@ const defaultProps: Partial<LayoutProps> = {};
 
 const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
   return (
-    <S.Wrapper {...pageMotionProps}>
+    <S.Wrapper>
       {/* <CookieBar /> */}
       {/* <Header /> */}
       {/* <Menu /> */}
 
-      <S.Main id="layout">{children}</S.Main>
+      <S.Main id="layout" {...pageMotionProps}>
+        {children}
+      </S.Main>
 
       {/* <Footer  /> */}
     </S.Wrapper>

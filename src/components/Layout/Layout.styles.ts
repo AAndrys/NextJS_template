@@ -10,8 +10,8 @@ export const Wrapper = styled.div<WrapperProps>`
   min-height: ${setVh(100)};
 
   position: relative;
-
-  opacity: 1;
 `;
 
-export const Main = styled(motion.main)``;
+export const Main = styled(motion.main)`
+  opacity: 1;
+`;
