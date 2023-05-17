@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import styled from 'styled-components';
 import { setVh } from 'utils/styles/mixins';
 
@@ -12,6 +12,6 @@ export const Wrapper = styled.div<WrapperProps>`
   position: relative;
 `;
 
-export const Main = styled(motion.main)`
+export const Main = styled(m.main)`
   opacity: 1;
 `;
