@@ -6,6 +6,7 @@ const withPWA = require('next-pwa')({
   scope: '/',
   buildExcludes: [/chunks\/images\/.*$/],
 });
+
 const withImages = require('next-images');
 const withVideos = require('next-videos');
 
@@ -15,15 +16,7 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  experimental: {
-    modularizeImports: {
-      lodash: {
-        transform: 'lodash/{{member}}',
-      },
-    },
-  },
   compress: true,
-  inlineImageLimit: false,
   i18n: {
     locales: ['en', 'pl'],
     defaultLocale: 'en',

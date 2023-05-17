@@ -34,7 +34,6 @@ const IndexPage: FunctionComponent<IndexPageProps> = () => {
               alt="Vercel Logo"
               width={100}
               height={24}
-              priority
             />
           </a>
         </div>
@@ -46,7 +45,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = () => {
           alt="Next.js Logo"
           width={180}
           height={37}
-          priority
+          loading="lazy"
         />
       </S.Center>
 
