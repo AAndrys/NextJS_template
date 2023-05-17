@@ -11,7 +11,7 @@ const defaultProps: Partial<LayoutProps> = {};
 
 const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
   return (
-    <S.Wrapper>
+    <>
       {/* <CookieBar /> */}
       {/* <Header /> */}
       {/* <Menu /> */}
@@ -21,7 +21,7 @@ const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
       </S.Main>
 
       {/* <Footer  /> */}
-    </S.Wrapper>
+    </>
   );
 };
 

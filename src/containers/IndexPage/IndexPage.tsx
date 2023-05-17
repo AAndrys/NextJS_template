@@ -16,7 +16,7 @@ interface IndexPageProps {}
 
 const IndexPage: FunctionComponent<IndexPageProps> = () => {
   return (
-    <S.Main>
+    <S.Wrapper>
       <S.Description>
         <p>
           Get started by editing&nbsp;
@@ -59,7 +59,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = () => {
         ))}
       </S.Grid>
       <small>Modified by AA &copy;</small>
-    </S.Main>
+    </S.Wrapper>
   );
 };
 

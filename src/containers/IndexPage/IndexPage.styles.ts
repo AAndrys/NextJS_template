@@ -4,7 +4,7 @@ import media from 'utils/styles/media.styles';
 import { setVh } from 'utils/styles/mixins';
 import { layout } from 'utils/styles/theme';
 
-export const Main = styled.main`
+export const Wrapper = styled.div`
   min-height: ${setVh(100)};
 
   display: flex;
