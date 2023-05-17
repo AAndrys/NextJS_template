@@ -5,7 +5,6 @@ import { ThemeProvider } from 'styled-components';
 import { useEffectOnce } from 'usehooks-ts';
 import { onResize } from 'utils';
 import { HEAD_TEMP_DATA } from 'utils/data';
-import GlobalStyles from 'utils/styles/globalStyles';
 import theme from 'utils/styles/theme';
 
 import Head from 'components/Head/Head';
@@ -23,7 +22,6 @@ const App = ({ Component, pageProps, router }: AppProps) => {
     <React.StrictMode>
       <ThemeProvider theme={{ ...theme, locale: router.locale }}>
         <MotionConfig>
-          <GlobalStyles />
           <Head {...HEAD_TEMP_DATA} />
           <Layout>
             <AnimatePresence
