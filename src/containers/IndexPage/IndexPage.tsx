@@ -28,7 +28,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By
             <S.VercelLogo
               src="/vercel.svg"
               alt="Vercel Logo"

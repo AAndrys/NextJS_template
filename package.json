@@ -44,9 +44,10 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.4.1",
+    "@svgr/webpack": "^8.0.1",
     "@types/styled-components": "^5.1.26",
-    "babel-plugin-styled-components": "^2.1.1",
     "eslint-plugin-simple-import-sort": "^10.0.0",
-    "pre-commit": "^1.2.2"
+    "pre-commit": "^1.2.2",
+    "url-loader": "^4.1.1"
   }
 }
