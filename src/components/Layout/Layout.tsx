@@ -1,5 +1,5 @@
 import React, { FunctionComponent, ReactNode } from 'react';
-import { pageMotionProps } from 'utils/styles/animations';
+// import { pageMotionProps } from 'utils/styles/animations';
 
 import * as S from './Layout.styles';
 
@@ -16,9 +16,7 @@ const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
       {/* <Header /> */}
       {/* <Menu /> */}
 
-      <S.Main id="layout" {...pageMotionProps}>
-        {children}
-      </S.Main>
+      <S.Main id="layout">{children}</S.Main>
 
       {/* <Footer  /> */}
     </>
