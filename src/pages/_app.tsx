@@ -10,8 +10,6 @@ import theme from 'utils/styles/theme';
 import Head from 'components/Head/Head';
 import Layout from 'components/Layout/Layout';
 
-import 'styles/globals.css';
-
 const App = ({ Component, pageProps, router }: AppProps) => {
   useEffectOnce(() => {
     window.addEventListener('resize', onResize);
