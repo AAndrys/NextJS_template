@@ -1,5 +1,7 @@
 import { css, FlattenSimpleInterpolation } from 'styled-components';
 
+import { EnumToKey } from '../../../types/global';
+
 export enum TypographyNames {
   h1 = 'h1',
   h2 = 'h2',
@@ -29,7 +31,7 @@ export const fontNames = {
   [FontNames.mono]:
     // eslint-disable-next-line quotes
     "ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace",
-};
+} as const;
 
 export const fonts: FontsTypes = {
   h1: css`
@@ -120,6 +122,9 @@ export const fonts: FontsTypes = {
     font-size: clamp(15px, 0.5rem, 16px);
     line-height: 1;
   `,
-};
+} as const;
 
 export const validFontCategories = Object.keys(fonts);
+
+export const typography = (name: EnumToKey<typeof TypographyNames>) =>
+  fonts[name];

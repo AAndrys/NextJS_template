@@ -1,21 +1,24 @@
 import React, { FunctionComponent } from 'react';
+import { FontNames, TypographyNames } from 'utils/styles/fonts';
 import { ColorNames } from 'utils/styles/theme';
+
+import { EnumToKey } from '../../../types/global';
 
 import * as S from './Text.styles';
 
 export interface TextProps {
   text: string;
-  size: any;
-  color?: ColorNames;
+  size: EnumToKey<typeof TypographyNames>;
+  color?: EnumToKey<typeof ColorNames>;
   as?: any;
   transform?: 'uppercase' | 'capitalize' | 'lowercase';
-  fontFamily?: any;
+  fontFamily?: EnumToKey<typeof FontNames>;
   [x: string]: any;
 }
 
 const defaultProps: Partial<TextProps> = {
   color: ColorNames.white,
-  size: 'body',
+  size: 'bodyLight',
 };
 
 const Text: FunctionComponent<TextProps> = ({

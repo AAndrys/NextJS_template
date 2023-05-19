@@ -17,15 +17,10 @@ const styles = css`
     -moz-osx-font-smoothing: grayscale;
   }
 
-  ::selection {
-    background: ${colors.black};
-    color: ${colors.white};
-    text-shadow: none;
-  }
-
+  ::selection,
   ::-moz-selection {
-    background: ${colors.black};
-    color: ${colors.white};
+    background: ${colors.white};
+    color: ${colors.black};
     text-shadow: none;
   }
 
