@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { FontNames, TypographyNames } from 'utils/styles/fonts';
 import { ColorNames } from 'utils/styles/theme';
 
-import { EnumToKey } from '../../../types/global';
+import { EnumToKey } from '../../types/global';
 
 import * as S from './Text.styles';
 

@@ -50,6 +50,7 @@ const styles = css`
   textarea,
   select {
     -webkit-appearance: none;
+    appearance: none;
     background: none;
     font-family: inherit;
     border: none;

@@ -1,7 +1,5 @@
 import { css, FlattenSimpleInterpolation } from 'styled-components';
 
-import { EnumToKey } from '../../../types/global';
-
 export enum TypographyNames {
   h1 = 'h1',
   h2 = 'h2',
@@ -125,6 +123,3 @@ export const fonts: FontsTypes = {
 } as const;
 
 export const validFontCategories = Object.keys(fonts);
-
-export const typography = (name: EnumToKey<typeof TypographyNames>) =>
-  fonts[name];

@@ -27,7 +27,7 @@ export const Description = styled.div`
   justify-content: inherit;
   align-items: inherit;
 
-  z-index: ${layout.zIndex.overlay};
+  z-index: ${layout.zIndex.overContent};
 
   a {
     display: flex;
@@ -46,7 +46,7 @@ export const Description = styled.div`
   p {
     align-items: center;
     inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
+    padding: 3rem 1rem 1.4rem;
     border-bottom: 1px solid rgba(108, 108, 108, 0.25);
     background: linear-gradient(
       to bottom,

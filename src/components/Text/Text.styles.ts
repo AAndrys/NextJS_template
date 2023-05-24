@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-import { fontNames, typography } from 'utils/styles/fonts';
+import { fontNames } from 'utils/styles/fonts';
+import { typography } from 'utils/styles/mixins';
 import { ColorNames, colors } from 'utils/styles/theme';
 
 import { TextProps } from './Text';

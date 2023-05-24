@@ -18,7 +18,7 @@ export const layout = {
     overContent: 1,
     filter: 10,
     menuModal: 100,
-    navbar: 1000,
+    header: 1000,
     overlay: 10000,
     nonFunctionals: 100000,
   },

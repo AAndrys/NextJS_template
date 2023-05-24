@@ -10,8 +10,11 @@ import theme from 'utils/styles/theme';
 import Head from 'components/Head/Head';
 import Layout from 'components/Layout/Layout';
 
+import { storeDevTools } from '../store';
+
 const App = ({ Component, pageProps, router }: AppProps) => {
   useEffectOnce(() => {
+    storeDevTools();
     window.addEventListener('resize', onResize);
     return () => window.removeEventListener('resize', onResize);
   });
