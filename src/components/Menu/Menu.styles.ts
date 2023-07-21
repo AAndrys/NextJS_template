@@ -9,8 +9,6 @@ export const Wrapper = styled(motion.div)<WrapperProps>`
   width: 100%;
   height: ${setVh(100)};
 
-  overflow: scroll;
-
   display: flex;
   justify-content: space-between;
   flex-direction: column;

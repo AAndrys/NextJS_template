@@ -65,7 +65,6 @@ const IndexPage: FunctionComponent<IndexPageProps> = () => {
           </S.Card>
         ))}
       </S.Grid>
-      <small>Modified by AA &copy;</small>
     </S.Wrapper>
   );
 };

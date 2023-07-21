@@ -1,6 +1,7 @@
 export enum ColorNames {
   white = 'white',
   black = 'black',
+  gray = 'gray',
 }
 
 export interface Theme {
@@ -11,6 +12,7 @@ export interface Theme {
 export const colors: Theme['colors'] = {
   [ColorNames.white]: '#FFFFFF',
   [ColorNames.black]: '#000000',
+  [ColorNames.gray]: '#7E7E7E',
 } as const;
 
 export const layout = {
