@@ -35,6 +35,8 @@ export const Nav = styled.nav`
   display: none;
 
   ${media.tablet} {
+    display: initial;
+
     & a {
       display: inline-block;
 
