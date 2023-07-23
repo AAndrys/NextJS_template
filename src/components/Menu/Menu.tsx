@@ -1,5 +1,7 @@
 import React, { FunctionComponent, useMemo } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import uniqueId from 'lodash/uniqueId';
+import Link from 'next/link';
 
 import { useGlobalStore } from '../../store';
 
@@ -9,14 +11,18 @@ import * as S from './Menu.styles';
 export interface MenuProps {}
 
 const Menu: FunctionComponent<MenuProps> = ({ ...rest }) => {
-  const { isMenuOpen, setIsMenuOpen } = useGlobalStore();
+  const { isMobile, isMenuOpen, setIsMenuOpen } = useGlobalStore();
 
   const mainNavigation = useMemo(
     () => (
       <S.NavList>
-        {[].map(({ href, label }) => (
-          <li key={href + label} onClick={() => setIsMenuOpen(false)}>
-            {/* <LinkComp href={href}>{label}</LinkComp> */}
+        {[
+          { href: '/', label: 'Home' },
+          { href: '/', label: 'About' },
+          { href: '/', label: 'Ins' },
+        ].map(({ href, label }) => (
+          <li key={uniqueId()} onClick={() => setIsMenuOpen(false)}>
+            <Link href={href}>{label}</Link>
           </li>
         ))}
       </S.NavList>
@@ -30,6 +36,8 @@ const Menu: FunctionComponent<MenuProps> = ({ ...rest }) => {
       <S.Nav>{mainNavigation}</S.Nav>
     </S.MenuContent>
   );
+
+  if (!isMobile) return null;
 
   return (
     <AnimatePresence>

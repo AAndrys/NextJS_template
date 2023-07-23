@@ -1,4 +1,6 @@
 import React, { FunctionComponent } from 'react';
+import uniqueId from 'lodash/uniqueId';
+import Link from 'next/link';
 import { useGlobalStore } from 'store';
 import SvgLogo from 'svgs/next.svg';
 
@@ -24,6 +26,18 @@ const Header: FunctionComponent<HeaderProps> = ({ ...rest }) => {
       <S.MenuButton onClick={handleMenuClick}>
         <AnimatedMenuIcon isMenuOpen={isMenuOpen} />
       </S.MenuButton>
+
+      <S.Nav>
+        {[
+          { href: '/', label: 'Home' },
+          { href: '/', label: 'About' },
+          { href: '/', label: 'Ins' },
+        ].map(({ href, label }) => (
+          <Link key={uniqueId()} href={href}>
+            {label}
+          </Link>
+        ))}
+      </S.Nav>
     </S.Wrapper>
   );
 };

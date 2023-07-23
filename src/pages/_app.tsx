@@ -10,13 +10,16 @@ import theme from 'utils/styles/theme';
 import Head from 'components/Head/Head';
 import Layout from 'components/Layout/Layout';
 
-import { storeDevTools } from '../store';
+import { storeDevTools, useGlobalStore } from '../store';
 
 const App = ({ Component, pageProps, router }: AppProps) => {
+  const { setIsMobile } = useGlobalStore();
+
   useEffectOnce(() => {
     storeDevTools();
-    window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
+    window.addEventListener('resize', () => onResize(setIsMobile));
+    return () =>
+      window.removeEventListener('resize', () => onResize(setIsMobile));
   });
 
   return (
