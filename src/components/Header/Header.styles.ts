@@ -42,12 +42,6 @@ export const Nav = styled.nav`
 
       ${typography('h5')};
       margin: 0 0 0 30px;
-
-      @media (hover: hover) {
-        &:hover {
-          transform: scale(1.05);
-        }
-      }
     }
   }
 `;

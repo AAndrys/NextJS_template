@@ -43,14 +43,9 @@ export const NavList = styled.ul`
 
   & li {
     margin: 15px 0;
+
     a {
       ${typography('h2')}
-    }
-
-    @media (hover: hover) {
-      &:hover {
-        transform: scale(1.05);
-      }
     }
   }
 `;
