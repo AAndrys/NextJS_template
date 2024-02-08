@@ -26,7 +26,7 @@ export const Logo = styled.div`
 `;
 
 export const MenuButton = styled.div`
-  ${media.tablet} {
+  ${media.desktop} {
     display: none;
   }
 `;
@@ -34,7 +34,7 @@ export const MenuButton = styled.div`
 export const Nav = styled.nav`
   display: none;
 
-  ${media.tablet} {
+  ${media.desktop} {
     display: initial;
 
     & a {

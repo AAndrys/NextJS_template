@@ -108,7 +108,7 @@ export const Grid = styled.div`
   margin-bottom: 120px;
   text-align: center;
 
-  ${media.tablet} {
+  ${media.desktop} {
     grid-template-columns: repeat(2, 50%);
   }
 

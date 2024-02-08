@@ -1,6 +1,6 @@
 import debounce from 'lodash/debounce';
 
-import { breakpointTablet } from './styles/vars';
+import { breakpointDesktop } from './styles/vars';
 
 interface OnResizeTypes {
   setIsMobile: (state: boolean) => void;
@@ -11,7 +11,7 @@ export const onResize = debounce(
     const vh = window.innerHeight * 0.01;
     const vw = window.innerWidth;
 
-    setIsMobile(vw < breakpointTablet);
+    setIsMobile(vw < breakpointDesktop);
     document.documentElement.style.setProperty('--vh', `${vh}px`);
     document.documentElement.style.setProperty('--vw', `${vw}px`);
   },
